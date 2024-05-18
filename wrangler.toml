@@ -2,11 +2,9 @@ name = "edunexus-app"
 version = "1.0.0"
 description = "web app"
 main = "index.js"
-scripts = {
-  "dev": "wrangler dev",
-  "build": "wrangler build",
-  "deploy": "wrangler deploy"
-}
+scripts = { "dev": "wrangler dev",
+"build": "wrangler build",
+"deploy": "wrangler deploy"}
 dependencies = {
   "react": "^18.2.0",
   "react-dom": "^18.2.0",
