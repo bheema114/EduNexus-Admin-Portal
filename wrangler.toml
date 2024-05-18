@@ -1,4 +1,23 @@
-name = "edunexus"
-type = "webpack"
-build_command = "npm install && npm run build"
-pages_build_output_dir = "dist"
+name = "edunexus-app"
+version = "1.0.0"
+description = "web app"
+main = "index.js"
+scripts = {
+  "dev": "wrangler dev",
+  "build": "wrangler build",
+  "deploy": "wrangler deploy"
+}
+dependencies = {
+  "react": "^18.2.0",
+  "react-dom": "^18.2.0",
+  "react-router-dom": "^6.3.0"
+}
+devDependencies = {
+  "wrangler": "^3.0.0"
+}
+build = {
+  "command": "webpack"
+}
+deploy = {
+  "command": "wrangler publish"
+}
