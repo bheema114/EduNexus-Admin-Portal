@@ -2,20 +2,22 @@ name = "edunexus-app"
 version = "1.0.0"
 description = "web app"
 main = "index.js"
-scripts = { "dev": "wrangler dev",
-"build": "wrangler build",
-"deploy": "wrangler deploy"}
-dependencies = {
-  "react": "^18.2.0",
-  "react-dom": "^18.2.0",
-  "react-router-dom": "^6.3.0"
-}
-devDependencies = {
-  "wrangler": "^3.0.0"
-}
-build = {
-  "command": "webpack"
-}
-deploy = {
-  "command": "wrangler publish"
-}
+
+[scripts]
+  dev = "wrangler dev"
+  build = "wrangler build"
+  deploy = "wrangler publish"
+
+[dependencies]
+  react = "^18.2.0"
+  react-dom = "^18.2.0"
+  react-router-dom = "^6.3.0"
+
+[devDependencies]
+  wrangler = "^3.0.0"
+
+[build]
+  command = "webpack"
+
+[deploy]
+  command = "wrangler publish"
