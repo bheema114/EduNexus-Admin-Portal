@@ -8,3 +8,4 @@ zone_id = ""
 [site]
 bucket = "./build"
 entry-point = ""
+pages_build_output_dir = "dist"
