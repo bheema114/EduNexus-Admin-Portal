@@ -21,3 +21,4 @@ main = "index.js"
 
 [deploy]
   command = "wrangler publish"
+pages_build_output_dir = "dist"
